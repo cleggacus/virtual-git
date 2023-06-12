@@ -1,0 +1,31 @@
+{
+  "name": "virtual-git",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Liam Clegg <cleggacus@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cleggacus/virtual-git.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "runExample": "npm install --prefix ./examples/test_example && npm run dev --prefix ./examples/test_example"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.18",
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "dockerode": "^3.3.5",
+    "parse-diff": "^0.11.1"
+  }
+}
